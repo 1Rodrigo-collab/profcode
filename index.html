@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia - Neymar Jr.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #525353, #0d0e0d);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .player-profile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .player-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .player-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        
+        .player-image img:hover {
+            transform: scale(1.02);
+        }
+        
+        .player-info {
+            flex: 2;
+            min-width: 300px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .player-info h2 {
+            color: #4a4d4c;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .player-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .stat-item {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-item h3 {
+            color: #494e4c;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        
+        .stat-item p {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        /* Linha do tempo */
+        .timeline {
+            margin: 50px 0;
+        }
+        
+        .timeline h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #4d504f;
+            font-size: 2rem;
+        }
+        
+        .timeline-item {
+            display: flex;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .timeline-year {
+            flex: 0 0 120px;
+            text-align: right;
+            padding-right: 30px;
+            font-weight: bold;
+            color: #555857;
+        }
+        
+        .timeline-content {
+            flex: 1;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .timeline-item:not(:last-child) .timeline-content::after {
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 24px;
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-right: 15px solid white;
+        }
+        
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 50px;
+        }
+
+        img {
+        float: right;
+        
+    }
+        
+        @media (max-width: 768px) {
+            .player-profile {
+                flex-direction: column;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+            }
+            
+            .timeline-year {
+                text-align: left;
+                padding-right: 0;
+                margin-bottom: 10px;
+            }
+            
+            .timeline-item:not(:last-child) .timeline-content::after {
+                display: none;
+            }
+            img {
+        float: right;
+        /* Adicionar mais estilos como largura, altura, etc. */
+    }    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="santos.png" alt="Sua imagem" width="100px" class="90%">
+            <h1>Neymar Jr.</h1> 
+            <p>Uma estrela do futebol mundial</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="player-profile">
+            <div class="player-image">
+                <img src="Neymara.jpg" alt="Neymar Jr. em ação">
+            </div>
+            
+            <div class="player-info">
+                <h2>Sobre o Jogador</h2>
+                <p>Neymar da Silva Santos Júnior, mais conhecido como Neymar Jr., é um dos jogadores de futebol mais talentosos e reconhecidos da sua geração. Nascido em Mogi das Cruzes, São Paulo, Neymar rapidamente se tornou uma sensação no futebol brasileiro antes de conquistar o mundo.</p>
+                
+                <div class="player-stats">
+                    <div class="stat-item">
+                        <h3>Nascimento</h3>
+                        <p>05/02/1992</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Altura</h3>
+                        <p>1,75 m</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Posição</h3>
+                        <p>Atacante</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Clube Atual</h3>
+                        <p>Santos futebol clube</p>
+                    </div>
+                </div>
+                
+                <p>Conhecido por sua habilidade técnica extraordinária, dribles criativos e capacidade de decisão, Neymar já atuou por grandes clubes como Santos FC, Barcelona e Paris Saint-Germain, além de ser peça fundamental na Seleção Brasileira.</p>
+            </div>
+        </section>
+        
+        <section class="timeline">
+            <h2>Linha do Tempo</h2>
+            <div class="timeline-item">
+                <div class="timeline-year">2009</div>
+                <img src="NeymarR.jpg" alt="NeymarR" width="500px">
+                <div class="timeline-content">
+                    <h3>Debut profissional pelo Santos FC</h3>
+                    <p>Neymar fez sua estreia profissional pelo Santos FC aos 17 anos, marcando em seu primeiro jogo contra o Oeste.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">2011</div>
+                    <img src="liberta.jpg" width="500px">
+                <div class="timeline-content">
+                    <h3>Libertadores e Artilheiro</h3>
+                    <p>Liderou o Santos à conquista da Copa Libertadores, sendo o artilheiro da competição com 6 gols.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">2013</div>
+                    <img src="Barcelona.jpg" width="500px" height="50%">
+                <div class="timeline-content">
+                    <h3>Transferência para o Barcelona</h3>
+                    <p>Foi vendido ao FC Barcelona por €57,1 milhões, formando o lendário trio MSN com Messi e Suárez.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">2017</div>
+                    <img src="PSG.jpg" width="500px">
+                <div class="timeline-content">
+                    <h3>Transferência recorde para o PSG</h3>
+                    <p>O Paris Saint-Germain pagou €222 milhões pela sua contratação, tornando-se a transferência mais cara da história.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">2023</div>
+                <img src="alhilal.jpg" width="500px" height="700">
+                <div class="timeline-content">
+                    <h3>Transferência para o Al Hilal</h3>
+                    <p>Assinou com o clube saudita Al Hilal por dois anos, iniciando nova fase em sua carreira.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2025</div>
+                <img src="Neysantos.jpg" width="500px">
+                <div class="timeline-content">
+                    <h3>A volta para o santos</h3>
+                    <p>E a grandiosa volta para o santos, muitos dizem que ele voltou para ficar... mas e ai? Sera que ele fica mesmo.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Biografia de Neymar Jr. - Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
